@@ -1,7 +1,7 @@
 /* THIS IS FOR MY NAV ELEMENTS ------------------------------------------*/ 
 
  
-.article{
+article{
 	-moz-column-count: 2; 
 }
 
@@ -66,7 +66,7 @@ nav a:hover {
 	background: #000; 
 }
 
-.pictures{     /*   THIS IS THE UL ID   */   
+#pictures{     /*   THIS IS THE UL ID   */   
 	width: 650px;
 	margin: 0 auto; 
 	border: 3px dashed #000;
@@ -76,20 +76,20 @@ nav a:hover {
 	padding: 5px ;
 }
 
-.image {      /*   THIS IS THE LI ID   */   
+#pictures li {      /*   THIS IS THE LI ID   */   
 	float: left;
 	list-style-type: none;
 	margin: 0 auto;
 	margin-left: ; 
-	width: 650px; 
+	width: 120px; 
 }
 
 .border {      /*   THIS IS THE ANCHOR ID   */   
 	border: 3px solid #000; 
 	display: block; 
 	height: 90px; 
-	width: 150px; 
-	outline: 0; 
+	width: 120px; 
+	outline: 0;  
 }
 
 .border:hover {
