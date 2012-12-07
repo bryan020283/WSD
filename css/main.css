@@ -1,42 +1,61 @@
-/* THIS IS FOR MY NAV ELEMENTS ------------------------------------------*/ 
+/* HERE I'M MAKING RESPONSIVE TEXT */
 
+
+
+#wrapper {
+		font: 100%/1.5 "helvetica neue", Arial, helvetica; 
+		max-width: 650px; /* 650px; */ 
+		margin: 0 auto; 
+
+}
  
 article{
-	-moz-column-count: 2; 
+	-moz-column-count: 3; 
 }
-
-h1, h2{
-	text-shadow: 2px 2px 2px #c00
+/* HERE I'M MAKING RESPONSIVE TEXT */
+h1, h2, h3{
+	font-size: 1.5em /*  this is 24px */  
+	font: 100%/1.5 "helvetica neue", Arial, helvetica;
+	text-shadow: 2px 2px 2px #f00;
 } 
 
-h2{ 
-	padding-bottom: -50px; 
+/* HERE I'M MAKING RESPONSIVE TEXT */
+
+p {
+	font-size: 0.9375em; /*this is 15px*/
+}
+
+aside {	
+	font-size: 0.9375em; /*this is 15px*/
+	width:  92.308%; /*600px / 650px */
 }
 
 .bulletstyle {
-	margin: 20px; 
+	margin: 3.077%;  /* 20 / 650 */ 
 	list-style-type: circle; 
-	float: none; 	
+	float: none; 
 }
 
 .mail{
 	display: block; 
-	background: #f00; width: 200px; 
+	background: #f00; width: 30.769%; /* 200 / 650 */
 	padding: 5px 
 }
 
 body {
 	font-family: Croissant One; Arial; 
-	width: 650px;
+/*	font: 100%/1.5 "helvetica neue", Arial, helvetica; */ 
+	width: 100%;  /*  650px */
 	margin: 0 auto;
-	background-image: url("../images/airplane.jpg"); 
+	background-image: url("../images/airplane.jpg") ; 
 	background-position: right center;  
 	background-repeat: no-repeat;
-
+	
+	
 }
 .second{
 	float: left; 
-	margin-left: 19px; 
+	margin-left: 2.923%; /* 19 / 650 */
 }
 
 ul {
@@ -65,15 +84,14 @@ nav a:hover {
 	color: #c30;
 	background: #000; 
 }
-
+/* -------FROM HERE TO THE END NOTE, VALUES WERE CONVERTED BUT IT BROKE MY LAYOUT SO I CHANGED IT BACK */
 #pictures{     /*   THIS IS THE UL ID   */   
-	width: 650px;
+	width: 640px;  
 	margin: 0 auto; 
-	border: 3px dashed #000;
+/*	border: 3px dashed #000;  THIS IS THE BORDER COMMENTED OUT */ 
 	list-style-type: none; 
-	margin: 20px auto;
-	overflow: hidden;
-	padding: 5px ;
+	/*margin: 20px auto;*/
+	padding: 0px 3.077% 0px 0px; 
 }
 
 #pictures li {      /*   THIS IS THE LI ID   */   
@@ -82,18 +100,64 @@ nav a:hover {
 	margin: 0 auto;
 	margin-left: ; 
 	width: 120px; 
+	padding: 19px; 
 }
 
 .border {      /*   THIS IS THE ANCHOR ID   */   
-	border: 3px solid #000; 
+	border: 10px solid #000; 
 	display: block; 
-	height: 90px; 
-	width: 120px; 
+	height: 103px; 
+	width: 124px; 
 	outline: 0;  
 }
-
+/*--------------END WHERE VALUES WERE NOT CONVERTED -----------*/ 
 .border:hover {
 	border-color: #f00; 
+}
+
+img {max-width: 100%;}
+
+
+
+/* Tablet portrait size to standard 960 (devices and browsers) */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+/*#wrapper {background-color: #509cff }*/
+	h3 {font-size: 2em; }
+	article {-moz-column-count: 4;}
+	#pictures li {padding: 1.538%;}  /* 10px / 650 */ 
+	#pictures {width: 86.923%; } /* 565 / 650 */ 
+	h1, h2, h3 {padding: 2.308%; }
+	aside {padding: 2.308%; }
+	p {padding: 2.308%; }  /* 15px / 650px */ 
+	#pictures {border: none; }
+
+
+	
+
+}
+
+/* mobile landscape size to tablet portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+/*#wrapper {background-color: #3cf }*/
+nav li {float: none; }
+h1, h2, h3 {padding: 2.308%; } /* 15px / 650 */ 
+aside {padding: 3.077%; }  /* 20px / 650 */
+#pictures {float: none; }
+p {padding: 3.077%; }  /* 20px / 650 */ 
+#pictures {border: none; }
+#pictures li {float: none; }
+
+}
+
+/* mobile portrait size to mobile landscape size */
+
+@media only screen and (max-width: 479px) {
+/*#wrapper {background-color: #09f;} */
+p {padding: 3.077%; }  /* 20px / 650 */ 
+h1, h2, h3 {padding: 2.308%; } /* 15px / 650 */ 
+aside {padding: 3.077%; }  /* 20px / 650 */
+#pictures {display: none; }
+nav li {float: none; }
 }
 
 
