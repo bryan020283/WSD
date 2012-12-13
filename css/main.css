@@ -6,7 +6,6 @@
 		font: 100%/1.5 "helvetica neue", Arial, helvetica; 
 		max-width: 650px; /* 650px; */ 
 		margin: 0 auto; 
-
 }
  
 article{
@@ -47,12 +46,11 @@ body {
 /*	font: 100%/1.5 "helvetica neue", Arial, helvetica; */ 
 	width: 100%;  /*  650px */
 	margin: 0 auto;
-	background-image: url("../images/airplane.jpg") ; 
+	background-image: url("../images/airplane.jpg"); 
 	background-position: right center;  
 	background-repeat: no-repeat;
-	
-	
 }
+
 .second{
 	float: left; 
 	margin-left: 2.923%; /* 19 / 650 */
@@ -123,17 +121,12 @@ img {max-width: 100%;}
 @media screen and (min-width: 768px) and (max-width: 959px) {
 /*#wrapper {background-color: #509cff }*/
 	h3 {font-size: 2em; }
-	article {-moz-column-count: 4;}
 	#pictures li {padding: 1.538%;}  /* 10px / 650 */ 
 	#pictures {width: 86.923%; } /* 565 / 650 */ 
 	h1, h2, h3 {padding: 2.308%; }
 	aside {padding: 2.308%; }
 	p {padding: 2.308%; }  /* 15px / 650px */ 
 	#pictures {border: none; }
-
-
-	
-
 }
 
 /* mobile landscape size to tablet portrait (devices and browsers) */
@@ -146,7 +139,7 @@ aside {padding: 3.077%; }  /* 20px / 650 */
 p {padding: 3.077%; }  /* 20px / 650 */ 
 #pictures {border: none; }
 #pictures li {float: none; }
-
+article { -moz-column-count: 2; }
 }
 
 /* mobile portrait size to mobile landscape size */
@@ -158,6 +151,7 @@ h1, h2, h3 {padding: 2.308%; } /* 15px / 650 */
 aside {padding: 3.077%; }  /* 20px / 650 */
 #pictures {display: none; }
 nav li {float: none; }
+article { -moz-column-count: 1; }
 }
 
 
