@@ -13,8 +13,8 @@
 <body>
 
 	<div id = "wrapper"> 
-	<img src="images/P59-Aira-comet.jpg" width = "200" height = "88" alt = "World War Plane"
-title = "Logo for Old Time Jets!" border = "3">
+		<img src="images/P59-Aira-comet.jpg" width = "200" height = "88" alt = "World War Plane"
+		title = "Logo for Old Time Jets!" border = "3">
 
 <header>
 <h1> Jets from World War II </h1>
@@ -33,23 +33,39 @@ title = "Logo for Old Time Jets!" border = "3">
 <body>
 <div>
 	<p>
-	If you would like to contact us, we are going to add a form soon to make it extra
-	easy to talk to the crew.  For now you can write to 44 Night Sky, AZ, 99999
+	If you would like to contact us, please fill out the form below and we will get back to you soon
 	</p> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<form> <!-- Currently not using: method, get, post, or action as this is not live --> 
+
+	<div>
+		<label for = "name_first"> First Name </label> 
+		<input type = "text" name = "name_first" id = "name_first" /> 
+	</div> 
+	
+	<div> 
+		<label for = "name_last"> Last Name </label>
+		<input type = "text" name = "name_last" id = "name_last" />
+	</div>
+	
+	<div>
+		<label for = "phone" > Phone Number </label>
+		<input type = "text" name = "phone" id = "phone" />
+	</div> 
+	
+	<div> 
+		<label for = "Email" > Email Address </label>
+		<input type = "text" name = "email" id = "email" />
+	</div>
+	
+	<label for = "best time to contact" > Best time to contact </label> 
+	
+	<select name = "Best time to contact" id = "best time to contact" >
+		<option> Morning </option>
+		<option> Afternoon </option>
+		<option> Evening </option>
+		<option> Weekends </option>
+	</select>
+</form> 
 	<footer>
 		<p> So folks this I guess is where we say &copy; 2012 
 		    We wrote this for your entertainment and to share
@@ -57,7 +73,7 @@ title = "Logo for Old Time Jets!" border = "3">
 		
 		</p>
 	</footer>
-</div> <!--  End of Wrapper  -->
+	</div> <!--  End of Wrapper  -->
 </body>
 </html>
 
