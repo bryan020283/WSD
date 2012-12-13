@@ -33,13 +33,8 @@ aside {
 	margin: 3.077%;  /* 20 / 650 */ 
 	list-style-type: circle; 
 	float: none; 
-}
 
-.mail{
-	display: block; 
-	background: #f00; width: 30.769%; /* 200 / 650 */
-	padding: 5px 
-}
+
 
 body {
 	font-family: Croissant One; Arial; 
@@ -115,6 +110,31 @@ nav a:hover {
 
 img {max-width: 100%;}
 
+/*----------------THIS IS WHERE THE GRADIENT BUTTON CODE IS COPIED FROM THE CSS BUTTON SITE */ 
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+/*  -------------END OF THE BUTTON CODE FOR YOUR REVIEW MR. VINCZE------------------*/ 
 
 
 /* Tablet portrait size to standard 960 (devices and browsers) */
