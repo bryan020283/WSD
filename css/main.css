@@ -11,7 +11,7 @@ article{
 }
 /* HERE I'M MAKING RESPONSIVE TEXT */
 h1, h2, h3{
-	font-size: 1.5em /*  this is 24px */  
+	font-size: 1.5em; /*  this is 24px */  
 	font: 100%/1.5 "helvetica neue", Arial, helvetica;
 	text-shadow: 2px 2px 2px #f00;
 } 
@@ -31,10 +31,10 @@ aside {
 	margin: 3.077%;  /* 20 / 650 */ 
 	list-style-type: circle; 
 	float: none; 
+}
 
 body {
-	font-family: Croissant One; Arial; 
-/*	font: 100%/1.5 "helvetica neue", Arial, helvetica; */ 
+	font-family: Croissant One, Arial; 
 	width: 100%;  /*  650px */
 	margin: 0 auto;
 	background-image: url("../images/airplane.jpg"); 
@@ -87,7 +87,6 @@ nav a:hover {
 	float: left;
 	list-style-type: none;
 	margin: 0 auto;
-	margin-left: ; 
 	width: 120px; 
 	padding: 19px; 
 }
@@ -109,7 +108,26 @@ img {max-width: 100%;}
 /*----------------THIS IS WHERE THE GRADIENT BUTTON CODE IS COPIED FROM THE CSS BUTTON SITE */ 
 
 
-/*  -------------END OF THE BUTTON CODE FOR YOUR REVIEW MR. VINCZE------------------*/ 
+/*  -------------END OF THE BUTTON CODE FOR YOUR REVIEW MR. VINCZE------------------*/
+
+/*-------------HERE BEGINS THE CODE FOR THE TABLE-------------*/
+
+td {border: 1px solid #000;
+	padding: 0.3em; 
+}
+
+table {border-collapse: collapse;
+		
+}
+
+table th {	text-align: left; 
+		background-color: #999; 
+		color: #fff;
+		border: 1px solid #000;
+		padding: 0.3em; 
+}
+
+/* ------------HERE ENDS THE CODE FOR THE TABLE --------------*/ 
 
 /* Tablet portrait size to standard 960 (devices and browsers) */
 @media screen and (min-width: 768px) and (max-width: 959px) {
@@ -126,6 +144,7 @@ img {max-width: 100%;}
 /* mobile landscape size to tablet portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 /*#wrapper {background-color: #3cf }*/
+article { -moz-column-count: 2; }
 nav li {float: none; }
 h1, h2, h3 {padding: 2.308%; } /* 15px / 650 */ 
 aside {padding: 3.077%; }  /* 20px / 650 */
@@ -133,21 +152,20 @@ aside {padding: 3.077%; }  /* 20px / 650 */
 p {padding: 3.077%; }  /* 20px / 650 */ 
 #pictures {border: none; }
 #pictures li {float: none; }
-article { -moz-column-count: 2; }
 }
 
 /* mobile portrait size to mobile landscape size */
 
 @media only screen and (max-width: 479px) {
 /*#wrapper {background-color: #09f;} */
+article { -moz-column-count: 1; }
 p {padding: 3.077%; }  /* 20px / 650 */ 
 h1, h2, h3 {padding: 2.308%; } /* 15px / 650 */ 
 aside {padding: 3.077%; }  /* 20px / 650 */
-#pictures {display: none; }
+#pictures li {float: none; }
 nav li {float: none; }
-article { -moz-column-count: 1; }
+h1, h2, h3 {font-size: 1em; }
 }
-
 
 /*-------------HERE BEGINS THE CODE FOR THE TABLE-------------*/
 
@@ -168,6 +186,29 @@ table th {	text-align: left;
 
 /* ------------HERE ENDS THE CODE FOR THE TABLE --------------*/
 
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
 
 
 
